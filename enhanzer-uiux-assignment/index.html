@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eZuite Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="topbar-left">
+            <div class="home-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            </div>
+            <div class="logo-area">
+                <span style="display:inline-flex; align-items:center; margin-right:2px; font-weight:bold;">&raquo;</span>eZuite
+            </div>
+            <div class="breadcrumbs">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white" style="opacity:0.8;"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H5v-4h9v4zm0-5H5V8h9v4zm5 5h-4V8h4v9z"/></svg>
+                <span>eCore</span> 
+                <span class="separator">&gt;</span> 
+                <span class="current">Employee</span>
+                <span style="margin-left: 4px; display:inline-flex;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </span>
+                <button class="icon-btn" style="margin-left: 4px;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="topbar-right">
+            <div class="admin-meta">
+                <div class="title">Settings</div>
+                <div class="subtitle">Admin</div>
+            </div>
+            <div class="profile-img">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Admin">
+            </div>
+            <button class="icon-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+            </button>
+            <button class="icon-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </button>
+            <button class="icon-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3-1.57-3-3.5s1.07-3.5 3-3.5 3 1.57 3 3.5-1.07 3.5-3 3.5z"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="workspace">
+         
+        <nav class="sidebar">
+            <a href="#" class="sidebar-item active">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H5v-4h9v4zm0-5H5V8h9v4zm5 5h-4V8h4v9z"/></svg>
+                Employee
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                Manager
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M14 6l-1-2H5v17h2v-7h5l1 2h7V6h-6z"/></svg>
+                Consultant
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                Engineering
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-15h-2v2h2V7zm0 4h-2v6h2v-6z"/></svg>
+                Scientist
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                Sales
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+                Customer Support
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-2.76 2.24-5 5-5s5 2.24 5 5v10c0 1.66-1.34 3-3 3s-3-1.34-3-3V6h2v9c0 .55.45 1 1 1s1-.45 1-1V5c0-1.66-1.34-3-3-3s-3 1.34-3 3v12.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V6h2z"/></svg>
+                QA
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+                Logistics
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Cxfo
+            </a>
+        </nav>
+
+        <main class="view-panel">
+             
+            <div class="panel-toolbar">
+                <div class="sub-tabs">
+                    <button class="tab-item">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        Drafts
+                    </button>
+                    <button class="tab-item active">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        Active <span class="tab-badge">16</span>
+                    </button>
+                    <button class="tab-item">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+                        Inactive
+                    </button>
+                    <button class="tab-item">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                        Deleted
+                    </button>
+                </div>
+                <div class="toolbar-right">
+                    <div class="search-box">
+                        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        <input type="text" id="employeeQuery" placeholder="Search">
+                    </div>
+                    <div class="pagination-controls">
+                        <span style="opacity: 0.5;">&laquo;</span>
+                        <span style="opacity: 0.5;">&lsaquo;</span>
+                        <span class="active-page">1</span>
+                        <span>2</span>
+                        <span>&rsaquo;</span>
+                        <span>&raquo;</span>
+                        <span style="display:inline-flex; align-items:center; margin-left: 4px;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table id="employeeDataTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Address</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Designation</th>
+                            <th>Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>123 Elm Street</td>
+                            <td>555-1234</td>
+                            <td>john.doe@example.com</td>
+                            <td>Sales</td>
+                            <td>Manager</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 1:40PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>456 Oak Avenue</td>
+                            <td>555-5678</td>
+                            <td>jane.smith@example.com</td>
+                            <td>Marketing</td>
+                            <td>Director</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 2:30PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Alice</td>
+                            <td>Johnson</td>
+                            <td>789 Pine Road</td>
+                            <td>555-8765</td>
+                            <td>alice.johnson@example.com</td>
+                            <td>HR</td>
+                            <td>Coordinator</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 2:35PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Kidi</td>
+                            <td>Brown</td>
+                            <td>721 Maple Lone</td>
+                            <td>555-2345</td>
+                            <td>kidi.brown@example.com</td>
+                            <td>IT</td>
+                            <td>Technistan</td>
+                            <td><div class="status-cell"><span class="status-badge b-type">B</span> 2024-03-03 2:05PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Charlie</td>
+                            <td>Davis</td>
+                            <td>834 Boyh Boolevent</td>
+                            <td>555-4456</td>
+                            <td>charlie.davis@example.com</td>
+                            <td>Finance</td>
+                            <td>Kryypel</td>
+                            <td><div class="status-cell"><span class="status-badge b-type">B</span> 2024-03-03 5:30PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Miller</td>
+                            <td>837 Ceder Street</td>
+                            <td>555-4567</td>
+                            <td>eve.miller@example.com</td>
+                            <td>Operations</td>
+                            <td>Supervisor</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 5:30PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Frank</td>
+                            <td>Wilson</td>
+                            <td>321 Spruce Way</td>
+                            <td>555-5976</td>
+                            <td>frank.arlson@example.com</td>
+                            <td>Legal</td>
+                            <td>Consultant</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 2:45PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Gracie</td>
+                            <td>Lee</td>
+                            <td>887 Haim Drive</td>
+                            <td>555-6788</td>
+                            <td>henry.lee@example.com</td>
+                            <td>Engineering</td>
+                            <td>Developer</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 2:45PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Henry</td>
+                            <td>Taylor</td>
+                            <td>837 At Roast</td>
+                            <td>555-9690</td>
+                            <td>henry.taylor@example.com</td>
+                            <td>R&II</td>
+                            <td>Scientist</td>
+                            <td><div class="status-cell"><span class="status-badge a-type">A</span> 2024-03-03 4.00PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Isatan</td>
+                            <td>Anderson</td>
+                            <td>152 Aspen Court</td>
+                            <td>555-9001</td>
+                            <td>jadkat.crokesus@example.com</td>
+                            <td>Customer Support</td>
+                            <td>Ingent</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 4.30PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Jack</td>
+                            <td>Thomas</td>
+                            <td>456 Cypress Avenue</td>
+                            <td>555-0312</td>
+                            <td>jack.thomas@example.com</td>
+                            <td>Quality Assurance</td>
+                            <td>Inspector</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 4.46PM</div></td>
+                        </tr>
+                        <tr>
+                            <td>Kyren</td>
+                            <td>Jackioel</td>
+                            <td>750 Restaout Road</td>
+                            <td>555-0213</td>
+                            <td>karen.jackson@example.com</td>
+                            <td>Logistics</td>
+                            <td>Coordinator</td>
+                            <td><div class="status-cell"><span class="status-badge check">&#10003;</span> 2024-03-03 3:30PM</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <footer class="system-footer">
+                <div class="refresh-tag">
+                    <span style="font-size:14px; font-weight:bold; display:inline-flex; transform: scaleX(-1);">&#8635;</span> 5.0
+                </div>
+                <div>&copy; 2024 eZuite. All rights reserved.</div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

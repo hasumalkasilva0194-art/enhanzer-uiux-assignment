@@ -1,0 +1,413 @@
+:root {
+    --topbar-bg: #006ec1;
+    --sidebar-bg: #1175c7;
+    --sidebar-hover: #0f62a6;
+    --text-main: #2b2b2b;
+    --text-secondary: #666666;
+    --border-light: #e2e8f0;
+    --active-blue: #006ec1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: var(--text-main);
+}
+
+/* --- TOP NAVIGATION BAR --- */
+.topbar {
+    background-color: var(--topbar-bg);
+    color: white;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.home-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-left: 35px;
+    font-size: 14px;
+}
+
+.breadcrumbs .separator {
+    opacity: 0.7;
+    font-size: 11px;
+}
+
+.breadcrumbs .current {
+    font-weight: 500;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.admin-meta {
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.admin-meta .title {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.admin-meta .subtitle {
+    opacity: 0.8;
+    font-size: 11px;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ddd;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.icon-btn:hover {
+    opacity: 1;
+}
+
+/* --- CONTAINER WORKSPACE --- */
+.workspace {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+    background-color: var(--sidebar-bg);
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    gap: 2px;
+    overflow-y: auto;
+}
+
+.sidebar-item {
+    width: 100%;
+    padding: 10px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.sidebar-item:hover, .sidebar-item.active {
+    background-color: var(--sidebar-hover);
+    color: white;
+}
+
+.sidebar-item svg {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 5px;
+    fill: currentColor;
+}
+
+/* --- MAIN VIEW PANELS --- */
+.view-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* --- SUB HEADER ACTIONS --- */
+.panel-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--border-light);
+    background-color: #ffffff;
+}
+
+.sub-tabs {
+    display: flex;
+    gap: 4px;
+}
+
+.tab-item {
+    padding: 6px 14px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: var(--text-secondary);
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tab-item.active {
+    border-color: var(--active-blue);
+    color: var(--active-blue);
+    font-weight: 500;
+}
+
+.tab-badge {
+    border: 1px solid var(--active-blue);
+    color: var(--active-blue);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 6px 12px 6px 32px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    font-size: 13px;
+    width: 240px;
+    outline: none;
+    color: var(--text-main);
+}
+
+.search-box input::placeholder {
+    color: #b0b0b0;
+}
+
+.search-box svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    fill: #888888;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.pagination-controls span {
+    cursor: pointer;
+    padding: 2px 4px;
+}
+
+.pagination-controls span.active-page {
+    color: var(--text-main);
+    font-weight: bold;
+}
+
+/* --- SYSTEM DATA TABLE --- */
+.table-responsive {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 24px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 13px;
+}
+
+.data-table th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    color: #111111;
+    font-weight: 600;
+    padding: 14px 10px;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.data-table td {
+    padding: 11px 10px;
+    border-bottom: 1px solid #edf2f7;
+    color: #2d3748;
+    white-space: nowrap;
+}
+
+.data-table tbody tr:hover td {
+    background-color: #f7fafc;
+}
+
+.status-cell {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status-badge {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.status-badge.check {
+    border: 1px solid #3182ce;
+    color: #3182ce;
+    background-color: #ebf8ff;
+}
+ 
+.status-badge.b-type {
+    border: 1px solid #2b6cb0;
+    color: #2b6cb0;
+    background-color: #ebf8ff;
+}
+
+.status-badge.a-type {
+    border: 1px solid #2c5282;
+    color: #2c5282;
+    background-color: #ebf8ff;
+}
+
+/* --- FOOTER STATUS --- */
+.system-footer {
+    height: 32px;
+    border-top: 1px solid var(--border-light);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.refresh-tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+/* This applies a light grey background to every even row */
+table tbody tr:nth-child(even) {
+    background-color: #f8fafc; /* Adjust this hex code to match your exact theme */
+}
+
+/* Optional: Ensures every odd row stays perfectly white */
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+/* Combining the header and bright sidebar for the Image 3 look */
+.top-navbar {
+    background-color: #0185cd;
+}
+.side-navbar {
+    background-color: #0484cb;
+}
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60px;
+}
+
+.sidebar-top {
+    background-color: #02388e; /* Deep navy */
+    flex-grow: 1; /* Takes up all available space at the top */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.sidebar-bottom {
+    background-color: #0185cd; /* Bright cerulean */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+}
